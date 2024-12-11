@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 import requests
 import pdfplumber
-from io import BytesIO
+#from io import BytesIO
 
 
 
@@ -43,9 +43,9 @@ with st.form(key='upload_cv'):
     user_cv = ""
     if uploaded_file is not None:
         try:
-            with pdfplumber.open(BytesIO(uploaded_file.read())) as pdf:
+            with pdfplumber.open(uploaded_file) as pdf: #BytesIO(uploaded_file.read())
                 # Extract text from all pages of the PDF
-                user_cv = "".join([page.extract_text() for page in pdf.pages])
+                user_cv = "".join([page.extract_text() for page in pdf.pages if page.extract_text()])
             st.success("CV uploaded and processed successfully!")
         except Exception as e:
             st.error(f"Failed to process the PDF. Error: {e}")
