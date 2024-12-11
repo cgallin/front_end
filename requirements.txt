@@ -1,4 +1,4 @@
-pip --upgrade
+
 uvicorn
 fastapi
 numpy
