@@ -1,0 +1,6 @@
+streamlit
+streamlit_extras
+streamlit_themes
+requests
+pdfplumber
+pyperclip
