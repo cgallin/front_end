@@ -1,7 +1,7 @@
 pip --upgrade
 streamlit
-streamlit_extras
-streamlit_themes
+streamlit-extras
+streamlit-themes
 requests
 pdfplumber
 pyperclip
