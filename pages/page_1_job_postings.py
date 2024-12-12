@@ -9,7 +9,7 @@ if 'pred' not in st.session_state:
     pred = None
     st.session_state.pred = pred
 
-st.markdown(''' # Recommended Job Postings 🧞‍♀️''')
+st.markdown(''' # Your Top 5 Job Postings 🧞‍♀️''')
 
 # Check if predictions are available
 api_output = st.session_state.get('prediction', None)
@@ -30,7 +30,7 @@ else:
                 job_descriptions.append(item['description'])
 
         # Submit button to generate cover letters
-        submitted = st.form_submit_button("Generate cover letters")
+        submitted = st.form_submit_button("Generate cover letters 🖋")
 
         if submitted:
             if st.session_state.pred:
