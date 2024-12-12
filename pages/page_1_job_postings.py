@@ -30,7 +30,7 @@ else:
                 job_descriptions.append(item['description'])
 
         # Submit button to generate cover letters
-        submitted = st.form_submit_button("Generate cover letters 🖋")
+        submitted = st.form_submit_button("🧞‍♀️ Generate cover letters 🖌")
 
         if submitted:
             if st.session_state.pred:
