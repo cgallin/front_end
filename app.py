@@ -5,7 +5,7 @@ import pdfplumber
 #from io import BytesIO
 
 
-
+st.set_page_config(page_title=None, page_icon=None, layout="centered", initial_sidebar_state="collapsed", menu_items=None)
 # User input page
 st.markdown('''# Cover Genie 🧞‍♀️''')
 st.markdown('''Please enter the following information to generate relevant job postings:''')
