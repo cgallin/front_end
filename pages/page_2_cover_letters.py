@@ -19,8 +19,9 @@ else:
         with st.expander(f"{job_recommendations[i]['title']} - {job_recommendations[i]['company']}"):
             st.write(cover_letter)
             # Copy button for each cover letter
-\
-            if st.download_button('Download Cover Letter', cover_letter, file_name=job_recommendations[i]["company"]+"_"+'cover_letter.docx', key=f'copy_{i}'):
+            if st.download_button('Download Cover Letter', cover_letter,
+                                  file_name=job_recommendations[i]["company"]+"_"+'cover_letter.docx'
+                                  , key=f'copy_{i}',mime="docx"):
                 st.success('Downloaded')
             # if st.button(f"Copy Cover Letter", key=f'copy_{i}'):
             #     pyperclip.copy(cover_letter)
