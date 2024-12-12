@@ -17,4 +17,4 @@ https://github.com/user-attachments/assets/d0d6c890-7dbf-46b0-a2d7-2549f1704a11
 
 ## Cosine-Similarity Recommender 
 
-## Langchain 
+## Langchain Model
