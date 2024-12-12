@@ -20,8 +20,8 @@ else:
             st.write(cover_letter)
             # Copy button for each cover letter
             if st.download_button('Download Cover Letter', cover_letter,
-                                  file_name=job_recommendations[i]["company"]+"_"+'cover_letter.docx'
-                                  , key=f'copy_{i}',mime="docx"):
+                                  file_name=job_recommendations[i]["company"]+"_"+'cover_letter.txt'
+                                  , key=f'copy_{i}',mime="txt"):
                 st.success('Downloaded')
             # if st.button(f"Copy Cover Letter", key=f'copy_{i}'):
             #     pyperclip.copy(cover_letter)
